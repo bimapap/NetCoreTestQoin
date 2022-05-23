@@ -1,0 +1,43 @@
+-- --------------------------------------------------------
+-- Host:                         localhost
+-- Server version:               10.6.7-MariaDB - mariadb.org binary distribution
+-- Server OS:                    Win64
+-- HeidiSQL Version:             11.3.0.6295
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+-- Dumping database structure for netcoretestqoin
+CREATE DATABASE IF NOT EXISTS `netcoretestqoin` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `netcoretestqoin`;
+
+-- Dumping structure for table netcoretestqoin.test01
+CREATE TABLE IF NOT EXISTS `test01` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `Nama` varchar(100) DEFAULT NULL,
+  `Status` smallint(6) DEFAULT NULL,
+  `Created` datetime DEFAULT curdate(),
+  `Updated` datetime DEFAULT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+
+-- Dumping data for table netcoretestqoin.test01: ~0 rows (approximately)
+/*!40000 ALTER TABLE `test01` DISABLE KEYS */;
+INSERT INTO `test01` (`Id`, `Nama`, `Status`, `Created`, `Updated`) VALUES
+	(1, 'Bima', 1, '2022-05-23 14:48:34', NULL),
+	(3, 'adi', 0, '2022-05-23 08:44:57', '2022-05-23 08:44:57'),
+	(4, 'pratama', 0, '2022-05-23 08:44:57', '2022-05-23 08:44:57'),
+	(5, 'bima queue', 0, '2022-05-23 13:07:58', '2022-05-23 13:07:58'),
+	(6, 'bima queue 2', 0, '2022-05-23 13:07:58', '2022-05-23 13:07:58');
+/*!40000 ALTER TABLE `test01` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
