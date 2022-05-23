@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-NetCoreTest2-447D70C5-2DBC-40C0-8D2C-223B8CCA95E0</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NetCoreTest.BusinessLogic\NetCoreTest.BusinessLogic.csproj" />
+    <ProjectReference Include="..\NetCoreTest.DataAccess.ViewModel\NetCoreTest.DataAccess.ViewModel.csproj" />
+    <ProjectReference Include="..\NetCoreTest.Helper\NetCoreTest.Helper.csproj" />
+  </ItemGroup>
+</Project>
