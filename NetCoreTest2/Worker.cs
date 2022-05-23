@@ -37,6 +37,7 @@ namespace NetCoreTest2
                 }
                 catch (Exception Ex)
                 {
+                    _channel.BasicAck(ea.DeliveryTag, false);
                     _logger.LogError(Ex.Message);
                 }
             };
