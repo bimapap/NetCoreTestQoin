@@ -8,6 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Helper", "1.Helper", "{DF5D9521-29E1-45A4-B3D1-475304F48107}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.DataAccess", "2.DataAccess", "{E1DA5C81-F3AC-48CC-9C13-AE1E777B6C86}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile1.txt = TextFile1.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.BusinessLogic", "3.BusinessLogic", "{243A63F1-96CA-4F76-86AD-EECD9633D3A2}"
 EndProject
