@@ -1,5 +1,5 @@
 # NetCoreTest
-Test .Net Core - Bima Prasetya Adi Pratama
+ .Net Core 6.0 & RabbitMQ - Bima Prasetya Adi Pratama
 
 Export Database = Script Migration Database.txt
 
